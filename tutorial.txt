@@ -1,0 +1,56 @@
+Ferramentas de Processamento de Listas M3U
+
+Este repositório contém três scripts Python para manipulação e organização de listas M3U, cada um com uma funcionalidade específica. Os scripts foram projetados para usuários que precisam organizar, calcular tamanhos de arquivos, e baixar conteúdos a partir de listas M3U.
+
+1. oraganizer.py
+
+Este script organiza as entradas de uma lista M3U em arquivos separados, agrupando-as por group-title.
+Uso
+
+    Substitua o nome do arquivo de entrada na variável input_file (padrão: lista.m3u).
+    Execute o script:
+
+    python oraganizer.py
+
+    Arquivos separados serão salvos no diretório m3u_files.
+
+Funcionalidades
+
+    Lê um arquivo M3U e separa as entradas por grupos (group-title).
+    Salva cada grupo em um arquivo M3U separado.
+
+
+2. downloader.py
+
+Este script realiza o download dos arquivos de vídeo e logotipos referenciados nas listas M3U.
+Uso
+
+    Coloque suas listas M3U no diretório m3u_files.
+    Execute o script:
+
+    python downloader.py
+
+    Os arquivos serão salvos no diretório downloads, organizados por grupo e título.
+
+Funcionalidades
+
+    Faz download de vídeos .mp4 e logotipos associados.
+    Cria uma estrutura de pastas organizada com base nos grupos e títulos extraídos.
+
+
+3. calculate_gigabites.py
+
+Este script calcula o tamanho total necessário para armazenar os arquivos referenciados em uma lista M3U.
+Uso
+
+    Coloque suas listas M3U no diretório m3u_files.
+    Execute o script:
+
+    python calculate_gigabites.py
+
+    O script exibirá o tamanho total necessário em GB.
+
+Funcionalidades
+
+    Analisa arquivos .m3u no diretório especificado.
+    Calcula o tamanho total de arquivos .mp4 referenciados na lista.
